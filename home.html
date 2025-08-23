@@ -1,109 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>payoo-MFS</title>
 
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body class=" w-[400px] h-[90vh] mx-auto mt-8 bg-[#f4f5f7]">
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body
+    class="w-[400px] h-[90vh] mx-auto mt-8 bg-[#f4f5f7] border border-[#838383] rounded-xl"
+  >
+    <nav class="flex justify-between items-center p-5 bg-[#ffffff]">
+      <!-- nav right -->
+      <div class="flex items-center">
+        <img src="assets/Group.png" alt="" class="w-[50px]" />
+        <div class="ml-1">
+          <h2 class="font-bold">$ <span>45000</span></h2>
+          <p class="text-[#838383]">Avilable Balance</p>
+        </div>
+      </div>
+      <!-- nav left -->
 
-
-<nav class="flex justify-between items-center p-5  bg-[#ffffff]">
-    <!-- nav right -->
-     <div class="flex items-center ">
-        <img src="assets/Group.png" alt="" class="w-[50px]">
-     <div class="ml-1">
-        <h2 class="font-bold">$ <span>45000</span></h2>
-        <p class="text-[#838383]">Avilable Balance</p>
-    </div>
-    </div>
-    <!-- nav left -->
-
-    <button class="  btn btn-outline">
-        <i class="fa-solid fa-arrow-right-from-bracket rotate-180 text-[#838383]"></i>
+      <button class="btn btn-outline">
+        <i
+          class="fa-solid fa-arrow-right-from-bracket rotate-180 text-[#838383]"
+        ></i>
         <span class="text-[#838383] font-[400]">Log Out</span>
-    </button>
+      </button>
+    </nav>
 
-</nav>
-
-<!-- welcome section   -->
-<section class="border p-5  bg-[#ffffff]">
-    <!-- tex section  -->
-     <div>
+    <!-- welcome section   -->
+    <section class="p-5 bg-[#ffffff] rounded-b-3xl">
+      <!-- tex section  -->
+      <div>
         <h1 class="font-bold text-xl">🔥 Welcome to Payooo!</h1>
-        <p class="text-[0.9rem] text-[#838383]">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
-     </div>
-
-     <!-- card section  -->
-      <div class="grid grid-cols-3 gap-3  ">
-
- 
-        <!-- card 1  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/wallet1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Add Money</p>
-        </div>
-
-       
-        <!-- card 2  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/send1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Cashout</p>
-        </div>
-
-       
-        <!-- card 3  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/money1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Transfer Money</p>
-        </div>
-
-       
-        <!-- card 4  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/bonus1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Get Bonus</p>
-        </div>
-
-       
-        <!-- card 5  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/purse1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Pay Bill</p>
-        </div>
-
-       
-        <!-- card 6  -->
-        <div class="border border-[#0202021a]  h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] ">
-            <img src="assets/transaction1.png" alt="" class="  mx-auto  " >
-            <p class="text-center text-[14px]">Transaction</p>
-        </div>
-
-       
-
-
-       
-
-
-
+        <p class="text-[0.9rem] text-[#838383]">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
       </div>
 
+      <!-- card section  -->
+      <div class="grid grid-cols-3 gap-3">
+        <!-- card 1  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/wallet1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Add Money</p>
+        </div>
+
+        <!-- card 2  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/send1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Cashout</p>
+        </div>
+
+        <!-- card 3  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/money1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Transfer Money</p>
+        </div>
+
+        <!-- card 4  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/bonus1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Get Bonus</p>
+        </div>
+
+        <!-- card 5  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/purse1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Pay Bill</p>
+        </div>
+
+        <!-- card 6  -->
+        <div
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+        >
+          <img src="assets/transaction1.png" alt="" class="mx-auto" />
+          <p class="text-center text-[14px]">Transaction</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Add Money Section  -->
+    <section class="">
+      <h2 class="font-semibold text-[1.1rem] ml-5 my-5">Add Money</h2>
+
+      <form action="" class="border bg-[#ffffff]  p-5 rounded-3xl">
 
 
-</section>  
+        <label class="">Select A Bank</label>
+        <select class="select !rounded-3xl mt-2 mb-5">
+          <option disabled selected>Pick a color</option>
+          <option>Select Bank</option>
+          <option>Amber</option>
+          <option>Velvet</option>
+        </select>
 
 
+        <label for="" >Bank Account Number</label>
+        <input
+          placeholder="Enter 11 digit account number"
+          id="phone"
+          type="text"
+          class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
+        />
 
 
+        <label for="">Amount to Add</label>
+        <input
+          placeholder="Add Amount to withdraw"
+          id="phone"
+          type="text"
+          class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
+        />
 
 
+        <label for="" class="mb-4" >Pin Number</label>
+        <input
+
+          placeholder="Enter 4 digit pin number"
+          id="phone"
+          type="text"
+          class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
+        />
+
+
+      <button
+        
+        class="py-[12px] px-[22px] rounded-3xl w-[100%] bg-[#0874f2] text-white font-semibold cursor-pointer transition-transform hover:scale-105"
+      >
+        Add Money
+      </button>
+
+
+      </form>
+    </section>
 
     <script src="script.js"></script>
-    
-</body>
+  </body>
 </html>
