@@ -28,10 +28,10 @@
       <div class="flex items-center">
         <img src="assets/Group.png" alt="" class="w-[50px]" />
         <div class="ml-1">
-          <h2 class="font-bold">$ <span>45000</span></h2>
+          <h2 class="font-bold">$ <span id="current-money">45000</span></h2>
           <p class="text-[#838383]">Avilable Balance</p>
         </div>
-      </div>
+      </div> 
       <!-- nav left -->
 
       <button class="btn btn-outline">
@@ -47,7 +47,7 @@
       <!-- tex section  -->
       <div>
         <h1 class="font-bold text-xl">🔥 Welcome to Payooo!</h1>
-        <p class="text-[0.9rem] text-[#838383]">
+        <p class="text-[0.9rem] text-[#838383] my-3">
           Enjoy easy and convenient financial services with us. Cashout charge
           is low and
         </p>
@@ -57,7 +57,7 @@
       <div class="grid grid-cols-3 gap-3">
         <!-- card 1  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/wallet1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Add Money</p>
@@ -65,7 +65,7 @@
 
         <!-- card 2  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/send1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Cashout</p>
@@ -73,7 +73,7 @@
 
         <!-- card 3  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/money1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Transfer Money</p>
@@ -81,7 +81,7 @@
 
         <!-- card 4  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/bonus1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Get Bonus</p>
@@ -89,7 +89,7 @@
 
         <!-- card 5  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/purse1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Pay Bill</p>
@@ -97,7 +97,7 @@
 
         <!-- card 6  -->
         <div
-          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232]"
+          class="border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105 "
         >
           <img src="assets/transaction1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Transaction</p>
@@ -113,18 +113,23 @@
 
 
         <label class="">Select A Bank</label>
-        <select class="select !rounded-3xl mt-2 mb-5">
-          <option disabled selected>Pick a color</option>
-          <option>Select Bank</option>
-          <option>Amber</option>
-          <option>Velvet</option>
+        <select id="add-bank-select" 
+        class="select !rounded-3xl mt-2 mb-5">
+          <option disabled selected>Select A Bank</option>
+         
+          <option id="first-bank-option">Select A Bank</option>
+          <option >Bank A</option>
+          <option >Bank B</option>
+          <option >Bank C</option>
+          <option >Bank D</option>
+         
         </select>
 
 
         <label for="" >Bank Account Number</label>
         <input
           placeholder="Enter 11 digit account number"
-          id="phone"
+          id="bank-account-no"
           type="text"
           class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
         />
@@ -133,7 +138,7 @@
         <label for="">Amount to Add</label>
         <input
           placeholder="Add Amount to withdraw"
-          id="phone"
+          id="add-amount"
           type="text"
           class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
         />
@@ -143,13 +148,13 @@
         <input
 
           placeholder="Enter 4 digit pin number"
-          id="phone"
+          id="add-pin"
           type="text"
           class="bg-[#f4f5f7] py-[12px] px-[22px] rounded-3xl w-[100%] mb-5 mt-2 border-none"
         />
 
 
-      <button
+      <button id="add-money-btn"
         
         class="py-[12px] px-[22px] rounded-3xl w-[100%] bg-[#0874f2] text-white font-semibold cursor-pointer transition-transform hover:scale-105"
       >
@@ -160,6 +165,6 @@
       </form>
     </section>
 
-    <script src="script.js"></script>
+    <script src="home.js"></script>
   </body>
 </html>
