@@ -18,7 +18,7 @@ document.getElementById("login-btn").addEventListener("click", function (e) {
   ) {
     window.location.href = "./home.html";
   } else {
-    console.log("Invalid");
+    alert('Invalid Phone or Pin')
   }
 });
 
