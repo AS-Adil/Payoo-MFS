@@ -21,7 +21,7 @@
     />
   </head>
   <body
-    class="w-[400px] h-[90vh] mx-auto mt-8 bg-[#f4f5f7] border border-[#838383] rounded-xl"
+    class="w-[400px] min-h-[95vh] mx-auto mt-8 bg-[#f4f5f7] border border-[#838383] rounded-xl"
   >
     <nav class="flex justify-between items-center p-5 bg-[#ffffff]">
       <!-- nav right -->
@@ -42,7 +42,7 @@
       </button>
     </nav>
 
-    <!-- welcome section   -->
+    <!-- welcome section & Cards  -->
     <section class="p-5 bg-[#ffffff] rounded-b-3xl">
       <!-- tex section  -->
       <div>
@@ -84,6 +84,7 @@
 
         <!-- card 4  -->
         <div
+          id="bonus-card"
           class="same-card border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/bonus1.png" alt="" class="mx-auto" />
@@ -92,6 +93,7 @@
 
         <!-- card 5  -->
         <div
+          id="pay-card"
           class="same-card border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/purse1.png" alt="" class="mx-auto" />
@@ -100,7 +102,8 @@
 
         <!-- card 6  -->
         <div
-          class=" same-card border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
+          id="transaction-card"
+          class="same-card border border-[#0202021a] h-[85px] rounded-xl flex flex-col justify-center items-center gap-1 text-[#333232] cursor-pointer transition-transform hover:scale-105"
         >
           <img src="assets/transaction1.png" alt="" class="mx-auto" />
           <p class="text-center text-[14px]">Transaction</p>
@@ -234,10 +237,72 @@
       </form>
     </section>
 
+    <!-- Bonus Section  -->
+    <section class="same-section hidden h-30" id="bonus-section">
+      <h2 class="font-semibold text-[1.1rem] ml-5 my-5">Transfer Money</h2>
+    </section>
 
+    <!-- Pay Bill Section  -->
+    <section class="same-section hidden h-30" id="pay-section">
+      <h2 class="font-semibold text-[1.1rem] ml-5 my-5">Pay Bill</h2>
+    </section>
 
+    <!-- Transiction-section Section  -->
+    <section class="same-section hidden" id="transiction-section">
+      <div class="flex items-center justify-between px-5">
+        <h2 class="font-semibold text-[1.1rem] my-5">Latest Payment</h2>
+        <p>View All</p>
+      </div>
 
+      <!-- payment List  -->
+
+      <div id="payment-list" class="border px-5 flex flex-col gap-3">
+        
+        <!-- list 1 -->
+        <div
+          id="record"
+          class="bg-[#FFFFFF] p-2 rounded-2xl flex justify-between items-center"
+        >
+          <!-- left -->
+          <div class="flex">
+            <!-- img div  -->
+            <div
+              class="bg-[#f4f5f7] w-12 h-12 flex justify-center items-center rounded-full"
+            >
+              <img id="record-img" src="assets/wallet1.png" alt="" />
+            </div>
+
+            <div class="ml-2">
+              <h3 id="record-tittle" class="font-semibold">Add Money</h3>
+              <h5 id="record-time" class="text-xs mt-[1px]">Today 01:44 AM</h5>
+            </div>
+          </div>
+
+          <!-- right -->
+          <div>
+            <i
+              class="fa-solid fa-ellipsis-vertical text-2xl cursor-pointer"
+            ></i>
+          </div>
+        </div>
+
+      </div>
+    </section>
 
     <script src="home.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
