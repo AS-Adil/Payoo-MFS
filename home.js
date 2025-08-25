@@ -28,7 +28,10 @@ document.getElementById("add-money-btn")
 
     const bankAccountNo = 22233322211;
 
-    if (givenPinNumber !== pinNumber) {
+     if(addAmount <= 0 ){
+      alert('Input a valid amount');
+      return;
+    }else if (givenPinNumber !== pinNumber) {
       alert("Invalid Pin");
       return;
     } else if (givenBankAccountNo !== bankAccountNo) {
@@ -101,7 +104,22 @@ document.getElementById("cash-out-btn").addEventListener("click", function (e) {
 
   const agentNo = 22233322211;
 
-  if (CashOutGivenPinNumber !== pinNumber) {
+
+
+    const CashOutCurrentMoney = parseInt(
+    document.getElementById("current-money").innerText
+  );
+
+
+    if(cashOutAmount <=0){
+      alert('Input a valid amount')
+      return;
+
+    } else if( cashOutAmount > CashOutCurrentMoney ){
+      alert(`Do not have enough money to Cashout ${cashOutAmount}`)
+      return;
+
+    } else if (CashOutGivenPinNumber !== pinNumber) {
     alert("Invalid Pin");
     return;
   } else if (cashOutAgent !== agentNo) {
@@ -110,9 +128,7 @@ document.getElementById("cash-out-btn").addEventListener("click", function (e) {
   }
 
   // things to be passed after condition validation
-  const CashOutCurrentMoney = parseInt(
-    document.getElementById("current-money").innerText
-  );
+
   console.log(CashOutCurrentMoney);
 
   const CashOutUpdateCurrentMoney = CashOutCurrentMoney - cashOutAmount;
@@ -198,7 +214,14 @@ document.getElementById("transfer-btn").addEventListener("click", function (e) {
   const AccountNumber = 22233322211;
   console.log("user account no is " + AccountNumber);
 
-  if (userAccountNo !== AccountNumber || userPin !== pin) {
+      if(userAmount <= 0){
+      alert('Input a valid amount')
+      return;
+    } else if( userAmount >  parseInt(document.getElementById("current-money").innerText)){
+      alert(`Do not have enough money to transfer ${userAmount}`)
+      return;
+
+    } else if (userAccountNo !== AccountNumber || userPin !== pin) {
     alert("Invalid Account Number or Pin");
     return;
   }
